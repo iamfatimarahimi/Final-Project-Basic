@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: Tahoma;
+        background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/094/132/original/14121184_5445590.jpg?1692608628);
+      }
+      .container {
+        box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+        max-width: 300%;
+        text-align: center;
+        opacity: 0.9;
+        background-image: linear-gradient(to top, #37ecba 0%, #ab9bfe 100%);
+        width: 50%;
+        padding: 200px 20px;
+        margin: 0 auto;
+        margin-top: 25px;
+        border-radius: 10px;
+        position: relative;
+      }
+      p {
+        font-size: 19px;
+        line-height: 2em;
+      }
+
+      hr {
+        border: 1px solid #5450fd;
+      }
+      h1 {
+        position: absolute;
+        top: 0;
+        left: 375px;
+      }
+      img {
+        position: absolute;
+        top: 50;
+      }
+      img:hover {
+        width: 250px;
+        cursor: pointer;
+        transition: all 400ms ease-in-out;
+      }
+      button {
+        position: absolute;
+        padding: 18px;
+        font-weight: bolder;
+        border: 1px solid #5450fd;
+        border-radius: 5px;
+        color: #5450fd;
+        bottom: 100px;
+        right: 350px;
+      }
+      button:hover {
+        cursor: pointer;
+        background-color: rgba(0, 0, 0, 0.56);
+        color: #fff;
+        transition: all 300ms ease-in-out;
+      }
+      span {
+        position: absolute;
+        bottom: 55px;
+        right: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/094/148/original/%E2%80%94Pngtree%E2%80%943d_stereo_earth_clipart_5663179.png?1692613520"
+        alt=""
+        width="220px"
+      />
+    </div>
+    <div class="container">
+      <h1>I love Space🌌</h1>
+
+      <hr />
+
+      <h2>Who created the space?👽</h2>
+      <hr />
+
+      <p>
+        It appears that space was created in the <strong> Big Bang</strong>,
+        13.8 billion years ago and has been expanding ever since. The overall
+        shape of space is not known, but space is known to be expanding very
+        rapidly due to the cosmic inflation.
+      </p>
+      <br />
+      <p>
+        Space, also known as outer space, is the area directly outside of
+        Earth's atmosphere. Space technically begins at the Kármán Line, which
+        is about 100 km or 62 miles above the Earth. Unlike Earth, there is no
+        air in space, which is why astronauts have to wear high-tech spacesuits
+        to travel there.
+      </p>
+      <a href="https://en.wikipedia.org/wiki/Outer_space"
+        >Read more on Wiki-Pedia</a
+      >
+      <br />
+      <button>Wanna Know More About Space?</button>
+      <br />
+      <span
+        >Coded by
+        <a href="https://fatimarahimi2006.lo@gmail.com">Fatima Rahimi</a>
+      </span>
+    </div>
+    <script>
+      let button = document.querySelector("button");
+      function action() {
+        let name = prompt("What's your name?");
+
+        if (name.length <= 2) {
+          alert("Name is too short!");
+        } else {
+          alert(`${name} we'll be in touch soon by email💖`);
+        }
+      }
+      button.addEventListener("click", action);
+    </script>
+  </body>
+</html>
+<em></em>
